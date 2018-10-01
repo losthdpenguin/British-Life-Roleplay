@@ -1,0 +1,32 @@
+class Maxence_Ebay {
+	tag = "maxence_ebay";
+	class functions {
+	file = "The-Programmer\Ebay\scripts";
+		class openEbay {};
+		class ebayBuy {};
+		class ebayPayment {};
+		class ebayLoadCurInventory {};
+		class ebaySellItem {};
+		class ebayCheckItem {};
+		class ebayTakeBack {};
+		class ebayInit {};
+		class ebayImpoundMenu {};
+		class ebayLoadSellingItems {};
+		class ebaySellVehicle {};
+		class ebayHousesMenu {};
+		class ebaySellHouse {};
+		class localize {};
+		class ebayEditItem {};
+		class ebayInfoItem {};
+		class ebayLbChangedDaysPrice {};
+		class ebayCategories {};
+		class ebayLbChangedBuyPrice {};
+		class ebayPreview {};
+		class ebayVehicleInit3DPreview {};
+		class ebayVehicleEnd3DPreview {};
+		class ebayHouseInit3DPreview {};
+		class ebayHouseEnd3DPreview {};
+		class ebayWeaponInit3DPreview {};
+		class ebayEditItemButton {};
+	};
+};

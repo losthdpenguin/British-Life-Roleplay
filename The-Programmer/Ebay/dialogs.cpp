@@ -1,0 +1,6 @@
+#include "config_master.cpp"
+#include "localization.hpp"
+#include "dialogs\main_menu.hpp"
+#include "dialogs\my_items_list.hpp"
+#include "dialogs\sell_menu.hpp"
+#include "dialogs\info_item.hpp"
