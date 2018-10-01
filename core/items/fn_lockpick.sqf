@@ -92,7 +92,7 @@ if (!_isVehicle) then {
         };
 
     } else {
-
+        [_curTarget,"CarAlarm"] remoteExec ["life_fnc_say3D",RANY];
         if (life_HC_isActive) then {
             [getPlayerUID player,profileName,"215"] remoteExecCall ["HC_fnc_wantedAdd",HC_Life];
         } else {
