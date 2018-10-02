@@ -1140,6 +1140,16 @@
             <Portuguese>Você pode sacar no máximo R£999.999</Portuguese>
             <Polish>Możesz jednorazowo pobrać maks £999,999 </Polish>
         </Key>
+        <Key>	   
+			<Key ID="STR_Toss_Ropes">
+            <Original>Toss Ropes</Original>
+       </Key>
+		<Key ID="STR_Cut_Ropes">
+            <Original>Cut Ropes</Original>
+       </Key>
+		<Key ID="STR_Fast_Rope">
+            <Original>Fast Rope</Original>
+		</Key>
         <Key ID="STR_ATM_WithdrawMin">
             <Original>You can't withdraw less then £100</Original>
             <Czech>Nemůžete odvolat méně než 100 £</Czech>

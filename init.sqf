@@ -10,7 +10,9 @@ StartProgress = false;
 if (hasInterface) then {
     [] execVM "briefing.sqf"; //Load Briefing
 };
+
 [] execVM "KRON_Strings.sqf";
 [] execVM "The-Programmer\GPS\init.sqf";
+[] execVM "scripts\zlt_fastrope.sqf";
 
 StartProgress = true;
