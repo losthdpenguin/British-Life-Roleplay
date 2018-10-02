@@ -97,6 +97,13 @@ class ProcessAction {
         NoLicenseCost = 1500; //optional price
     };
     
+    class shroom {
+        MaterialsReq[] = {{"shroom_unprocessed",1}};
+        MaterialsGive[] = {{"shroom_processed",1}};
+        Text = "STR_Process_shroom";
+        //ScrollText = "Process Tobacco";
+        NoLicenseCost = 1500; //optional price
+    };
     class cement {
         MaterialsReq[] = {{"rock",1}};
         MaterialsGive[] = {{"cement",1}};

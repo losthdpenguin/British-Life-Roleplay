@@ -41,6 +41,13 @@ class CfgGather {
             item = "";
             zoneSize = 30;
         }; 
+
+        class shroom_unprocessed {
+            amount = 15; //Optional Amount
+            zones[] = { "shroom_1" };
+            item = "";
+            zoneSize = 30;
+        }; 
     };
 
 /*

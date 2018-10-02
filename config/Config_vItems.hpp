@@ -71,7 +71,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tobacco_processed" }; //make sure class tobacco_processed is the same as the one in the shop
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tobacco_processed", "shroom_processed" }; //make sure class tobacco_processed is the same as the one in the shop
     };
 
     class oil {
@@ -509,6 +509,28 @@ class counterfitCash {
     };
 
     //Drugs
+    class shroom_unprocessed {
+        variable = "shroomUnprocessed";
+        displayName = "STR_Item_shroomu";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "";
+        processedItem = "shroom_processed";
+    };
+    class shroom_processed {
+        variable = "shroomProcessed";
+        displayName = "STR_Item_shroomP";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = 3500;
+        illegal = true;
+        edible = -1;
+        icon = "";
+    };
+
     class tobacco_unprocessed {
         variable = "tobaccoUnprocessed";
         displayName = "STR_Item_TobaccoU";

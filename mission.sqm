@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=4970;
+		nextID=4976;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=544;
+		nextID=612;
 	};
 	class Camera
 	{
-		pos[]={14647.659,19.754866,16755.645};
-		dir[]={-0.72988325,-0.25166985,0.63558877};
-		up[]={-0.18980365,0.96780783,0.16528174};
-		aside[]={0.65672404,2.2584572e-008,0.75415456};
+		pos[]={14571.928,74.559967,16741.828};
+		dir[]={0.81371474,-0.55810469,0.16258782};
+		up[]={0.54728836,0.82976711,0.10935402};
+		aside[]={0.1959397,3.8743019e-007,-0.98063791};
 	};
 };
 binarizationWanted=0;
@@ -453,7 +453,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1744;
+		items=1749;
 		class Item0
 		{
 			dataType="Marker";
@@ -994,7 +994,7 @@ class Mission
 			text="@STR_MAR_Car_Shop";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=359.1918;
+			angle=359.19177;
 			id=56;
 			atlOffset=0.0003490448;
 		};
@@ -2524,7 +2524,7 @@ class Mission
 			name="atm_marker_2_10";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=228.3822;
+			angle=228.38214;
 			id=209;
 			atlOffset=0.068870544;
 		};
@@ -64823,7 +64823,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_Process_Tobacco"",life_fnc_processAction,""tobacco"",0,false,false,"""",' life_inv_tobaccoUnprocessed > 0 && !life_is_processing && !life_action_inUse'];  this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""tobacco"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""tobacco"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""tobacco"",0,false,false,"""",' !license_civ_tobacco && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_Process_shroom"",life_fnc_processAction,""shroom"",0,false,false,"""",' life_inv_shroomUnprocessed > 0 && !life_is_processing && !life_action_inUse'];  this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""shroom"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""shroom"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""shroom"",0,false,false,"""",' !license_civ_shroom && playerSide isEqualTo civilian '];";
 						disableSimulation=1;
 						stance="Up";
 					};
@@ -64917,6 +64917,97 @@ class Mission
 			a=50;
 			b=50;
 			id=4969;
+		};
+		class Item1744
+		{
+			dataType="Marker";
+			position[]={14744.942,17.91,16678.59};
+			name="shroom_1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			a=50;
+			b=50;
+			id=4970;
+		};
+		class Item1745
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14621.475,17.911438,16745.736};
+						angles[]={0,2.5119824,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_Process_shroom"",life_fnc_processAction,""shroom"",0,false,false,"""",' life_inv_shroomUnprocessed > 0 && !life_is_processing && !life_action_inUse'];  this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""shroom"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""shroom"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""shroom"",0,false,false,"""",' !license_civ_shroom && playerSide isEqualTo civilian ']; " \n " " \n "";
+					};
+					id=4972;
+					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4971;
+		};
+		class Item1746
+		{
+			dataType="Marker";
+			position[]={14621.243,17.91,16745.053};
+			name="marker_254";
+			text="Shroom Dealer";
+			type="mil_dot";
+			id=4973;
+		};
+		class Item1747
+		{
+			dataType="Marker";
+			position[]={14641.595,17.91,16673.947};
+			name="marker_255";
+			text="Tobacco Field";
+			type="mil_dot";
+			id=4974;
+		};
+		class Item1748
+		{
+			dataType="Marker";
+			position[]={14744.57,17.91,16678.746};
+			name="marker_256";
+			text="Shroom Field";
+			type="mil_dot";
+			id=4975;
 		};
 	};
 };

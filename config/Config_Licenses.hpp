@@ -176,6 +176,14 @@ class Licenses {
         price = 15000;
         illegal = true;
         side = "civ";
+
+    class shroom {
+        variable = "shroom";
+        displayName = "STR_License_shroom";
+        price = 15000;
+        illegal = true;
+        side = "civ";
+    };
     };
     //Cop Licenses
     class cAir {

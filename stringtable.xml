@@ -1107,6 +1107,36 @@
             <Portuguese>Você não tem dinheiro suficiente na sua conta bancária. Para trasferir R£%1 você irá pagar R£%2 de taxa</Portuguese>
             <Polish>Nie masz wystarczająco dużo środków na końcie, do przelewu £%1 będziesz potrzebował jeszcze £%2 na opłatę</Polish>
         </Key>
+
+        <Key ID="STR_Item_shroomU">
+            <Original>Shrooms</Original>
+        </Key>
+        <Key ID="STR_Item_shroomP">
+            <Original>Magic Mushrooms</Original>
+        </Key> 
+
+         <Key ID="STR_License_shroom">
+            <Original>Shrooms Training</Original>
+        </Key> 
+
+         <Key ID="STR_Process_shroom">
+            <Original>Processing Shrooms</Original>
+        </Key>
+
+        <Key ID="STR_Item_TobaccoU">
+            <Original>Tobacco Leaf</Original>
+        </Key>
+        <Key ID="STR_Item_Tobacco">
+            <Original>Tobacco</Original>
+        </Key> 
+
+         <Key ID="STR_License_Tobacco">
+            <Original>Tobacco Training</Original>
+        </Key> 
+
+         <Key ID="STR_Process_Tobacco">
+            <Original>Processing Tobacco Leaves</Original>
+        </Key>
         <Key ID="STR_ATM_SentMoneySuccess">
             <Original>You have transfered £%1 to %2.\n\nA tax fee of £%3 was taken for the wire transfer.</Original>
             <Czech>Jste přenesli £%1 do %2. \n\nA daňový poplatek ve výši £%3 byla pořízena na bankovním převodem.</Czech>
