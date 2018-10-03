@@ -50,6 +50,8 @@ life_markers = false;
 life_markers_active = false;
 life_canpay_bail = true;
 life_storagePlacing = scriptNull;
+life_isSuiciding = false;
+
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

@@ -45,6 +45,11 @@ switch (playerSide) do {
             deleteVehicle _x;
         } forEach life_smokes;
     },"",0,false,false,"",'life_smokeTrail']);
+
+
+
+//Suicide alahsnackbar
+	life_actions = life_actions + [player addAction["<t color='#FF0000'>Activate Suicide Vest</t>",life_fnc_suicideBomb,"",0,false,false,"",' vest player == "V_HarnessOGL_gry" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
     };
 
     //Cops
