@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=612;
+		nextID=629;
 	};
 	class Camera
 	{
-		pos[]={14571.928,74.559967,16741.828};
-		dir[]={0.81371474,-0.55810469,0.16258782};
-		up[]={0.54728836,0.82976711,0.10935402};
-		aside[]={0.1959397,3.8743019e-007,-0.98063791};
+		pos[]={14651.11,21.444839,16755.643};
+		dir[]={-0.89119887,-0.31537119,0.32613403};
+		up[]={-0.29617837,0.94896126,0.10838512};
+		aside[]={0.34366998,5.8242586e-007,0.93911618};
 	};
 };
 binarizationWanted=0;
@@ -364,24 +364,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -396,6 +378,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -2524,7 +2524,7 @@ class Mission
 			name="atm_marker_2_10";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=228.38214;
+			angle=228.38213;
 			id=209;
 			atlOffset=0.068870544;
 		};
@@ -41397,8 +41397,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -41407,10 +41407,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -41435,8 +41435,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -41445,10 +41445,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -64823,7 +64823,7 @@ class Mission
 					class Attributes
 					{
 						rank="COLONEL";
-						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_Process_shroom"",life_fnc_processAction,""shroom"",0,false,false,"""",' life_inv_shroomUnprocessed > 0 && !life_is_processing && !life_action_inUse'];  this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""shroom"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""shroom"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""shroom"",0,false,false,"""",' !license_civ_shroom && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_Process_Tobacco"",life_fnc_processAction,""tobacco"",0,false,false,"""",' life_inv_tobaccoUnprocessed > 0 && !life_is_processing && !life_action_inUse'];  this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""tobacco"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""tobacco"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""tobacco"",0,false,false,"""",' !license_civ_tobacco && playerSide isEqualTo civilian '];";
 						disableSimulation=1;
 						stance="Up";
 					};
