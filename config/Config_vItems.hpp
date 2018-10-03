@@ -522,7 +522,7 @@ class counterfitCash {
     };
     class shroom_processed {
         variable = "shroomProcessed";
-        displayName = "STR_Item_shroomP";
+        displayName = "STR_Item_shroomProcessed";
         weight = 2;
         buyPrice = -1;
         sellPrice = 3500;
