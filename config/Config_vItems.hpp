@@ -71,7 +71,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tobacco_processed", "shroom_processed" }; //make sure class tobacco_processed is the same as the one in the shop
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tobacco_processed", "shroom_processed", "ectasy_processed" }; //make sure class tobacco_processed is the same as the one in the shop
     };
 
     class oil {
@@ -622,7 +622,28 @@ class counterfitCash {
         edible = -1;
         icon = "icons\ico_cocaineProcessed.paa";
     };
-
+    
+    class ectasy_unprocessed {
+        variable = "ectasyunprocessed";
+        displayName = "STR_Item_ectasyU";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "";
+        processedItem = "tobacco_processed";
+    };
+    class ectasy_processed {
+        variable = "ectasyprocessed";
+        displayName = "STR_Item_ectasy";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = 3500;
+        illegal = true;
+        edible = -1;
+        icon = "";
+    };
     //Drink
     class redgull {
         variable = "redgull";

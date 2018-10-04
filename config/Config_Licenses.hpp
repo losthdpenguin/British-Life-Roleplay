@@ -185,7 +185,13 @@ class Licenses {
         illegal = true;
         side = "civ";
     };
-
+    class ectasy {
+        variable = "ectasy";
+        displayName = "STR_License_ectasy";
+        price = 15000;
+        illegal = true;
+        side = "civ";
+    };
     //Cop Licenses
     class cAir {
         variable = "Pilots License";

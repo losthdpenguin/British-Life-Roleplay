@@ -73,6 +73,14 @@ class ProcessAction {
         NoLicenseCost = 50;
     };
 
+    class cement {
+        MaterialsReq[] = {{"rock",1}};
+        MaterialsGive[] = {{"cement",1}};
+        Text = "STR_Process_Cement";
+        //ScrollText = "Mix Cement";
+        NoLicenseCost = 50;
+    };
+
     class cocaine {
         MaterialsReq[] = {{"cocaine_unprocessed",1}};
         MaterialsGive[] = {{"cocaine_processed",1}};
@@ -104,11 +112,13 @@ class ProcessAction {
         //ScrollText = "Process Tobacco";
         NoLicenseCost = 1500; //optional price
     };
-    class cement {
-        MaterialsReq[] = {{"rock",1}};
-        MaterialsGive[] = {{"cement",1}};
-        Text = "STR_Process_Cement";
-        //ScrollText = "Mix Cement";
-        NoLicenseCost = 50;
+
+    class ectasy {
+        MaterialsReq[] = {{"ectasy_unprocessed",1}};
+        MaterialsGive[] = {{"ectasy_processed",1}};
+        Text = "STR_Process_ectasy";
+        //ScrollText = "Process Tobacco";
+        NoLicenseCost = 1500; //optional price
     };
+
 };

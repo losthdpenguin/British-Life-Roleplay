@@ -1107,6 +1107,21 @@
             <Portuguese>Você não tem dinheiro suficiente na sua conta bancária. Para trasferir R£%1 você irá pagar R£%2 de taxa</Portuguese>
             <Polish>Nie masz wystarczająco dużo środków na końcie, do przelewu £%1 będziesz potrzebował jeszcze £%2 na opłatę</Polish>
         </Key>
+        <Key ID="STR_Item_ectasyU">
+            <Original>Ectasy</Original>
+        </Key>
+        <Key ID="STR_Item_ectasy">
+            <Original>MDMA</Original>
+        </Key> 
+
+         <Key ID="STR_License_ectasy">
+            <Original>Ectasy Training</Original>
+        </Key> 
+
+         <Key ID="STR_Process_ectasy">
+            <Original>Processing Ectasy</Original>
+        </Key>
+
 
         <Key ID="STR_Item_shroomU">
             <Original>Shrooms</Original>

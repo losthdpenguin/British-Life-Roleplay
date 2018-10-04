@@ -48,6 +48,13 @@ class CfgGather {
             item = "";
             zoneSize = 30;
         }; 
+
+        class ectasy_unprocessed {
+            amount = 15; //Optional Amount
+            zones[] = { "ectasy_1" };
+            item = "";
+            zoneSize = 30;
+        }; 
     };
 
 /*

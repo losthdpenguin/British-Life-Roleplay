@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=4976;
+		nextID=4984;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=629;
+		nextID=680;
 	};
 	class Camera
 	{
-		pos[]={14651.11,21.444839,16755.643};
-		dir[]={-0.89119887,-0.31537119,0.32613403};
-		up[]={-0.29617837,0.94896126,0.10838512};
-		aside[]={0.34366998,5.8242586e-007,0.93911618};
+		pos[]={14655.173,21.444839,16760.939};
+		dir[]={-0.6144731,-0.48382884,0.62321454};
+		up[]={-0.33970031,0.87515444,0.34453136};
+		aside[]={0.71210229,5.0477684e-007,0.70211327};
 	};
 };
 binarizationWanted=0;
@@ -364,6 +364,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -378,24 +396,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -453,7 +453,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1749;
+		items=1753;
 		class Item0
 		{
 			dataType="Marker";
@@ -2524,7 +2524,7 @@ class Mission
 			name="atm_marker_2_10";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=228.38213;
+			angle=228.38208;
 			id=209;
 			atlOffset=0.068870544;
 		};
@@ -41397,8 +41397,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -41407,10 +41407,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -41435,8 +41435,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -41445,10 +41445,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -65008,6 +65008,107 @@ class Mission
 			text="Shroom Field";
 			type="mil_dot";
 			id=4975;
+		};
+		class Item1749
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14652.193,17.911438,16765.209};
+						angles[]={0,2.3516567,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_Process_ectasy"",life_fnc_processAction,""ectasy"",0,false,false,"""",' life_inv_ectasyunprocessed > 0 && !life_is_processing && !life_action_inUse'];  this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""ectasy"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""ectasy"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""ectasy"",0,false,false,"""",' !license_civ_ectasy && playerSide isEqualTo civilian ']; " \n " " \n "";
+					};
+					id=4977;
+					type="O_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4976;
+		};
+		class Item1750
+		{
+			dataType="Marker";
+			position[]={14652.146,17.91,16765.137};
+			name="marker_257";
+			text="Ectasy Processer";
+			type="mil_dot";
+			id=4980;
+		};
+		class Item1751
+		{
+			dataType="Marker";
+			position[]={14820.003,17.91,16750.684};
+			name="ectasy_1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			a=50;
+			b=50;
+			id=4982;
+		};
+		class Item1752
+		{
+			dataType="Marker";
+			position[]={14819.631,17.91,16746.313};
+			name="marker_258";
+			text="Ectasy Field";
+			type="mil_dot";
+			id=4983;
 		};
 	};
 };
