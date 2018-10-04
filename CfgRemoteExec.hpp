@@ -83,6 +83,8 @@ class CfgRemoteExec {
         F(zipties_fnc_zip_patdown,CLIENT)
         F(zipties_fnc_zip_untieFix,CLIENT)
         F(life_fnc_seizeObjects,CLIENT)
+        F(life_fnc_backup,CLIENT)
+
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)

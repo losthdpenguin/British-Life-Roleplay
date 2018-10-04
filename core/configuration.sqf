@@ -90,6 +90,8 @@ life_istazed = false;
 life_isknocked = false;
 life_vehicles = [];
 life_seatbelt = false;
+life_callBackup = true; 
+
 
 /*
     Master Array of items?

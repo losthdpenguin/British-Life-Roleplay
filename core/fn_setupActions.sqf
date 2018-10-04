@@ -56,6 +56,8 @@ switch (playerSide) do {
     case west: {
     	life_actions pushBack (player addAction["Seize Objects",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'((count(nearestObjects [player,["WeaponHolder"],3])>0) || (count(nearestObjects [player,["GroundWeaponHolder"],3])>0) || (count(nearestObjects [player,["WeaponHolderSimulated"],3])>0))']);
         player addaction ["Barriers",life_fnc_barrier,[""],0,false,true,"","vehicle player == player and BarrierOpen == 0"];
+		//Call backup  
+		life_actions pushBack (player addAction["<t color='#ADFF2F'>Request Backup</t>",life_fnc_callBackup,"",0,FALSE,FALSE,""]); 
     	};
     //EMS
     case independent: {

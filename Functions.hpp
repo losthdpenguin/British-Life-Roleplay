@@ -147,6 +147,8 @@ class Life_Client_Core {
         class vehInvSearch {};
         class wantedGrab {};
         class seizeObjects {};
+        class backup {};
+
     };
 
     class Dialog_Controls {
@@ -227,6 +229,8 @@ class Life_Client_Core {
         class teleport {};
         class whereAmI {};
         class seatbelt {};
+        class callBackup {};
+
     };
 
     class Gangs {
