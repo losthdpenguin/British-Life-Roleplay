@@ -31,3 +31,4 @@ if (hasInterface) then {
 };
 
 [] execVM "core\init.sqf";
+BarrierOpen = 0;

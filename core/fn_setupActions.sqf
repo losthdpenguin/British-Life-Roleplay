@@ -54,12 +54,16 @@ switch (playerSide) do {
 
     //Cops
     case west: {
-    		life_actions pushBack (player addAction["Seize Objects",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'((count(nearestObjects [player,["WeaponHolder"],3])>0) || (count(nearestObjects [player,["GroundWeaponHolder"],3])>0) || (count(nearestObjects [player,["WeaponHolderSimulated"],3])>0))']);
+    	life_actions pushBack (player addAction["Seize Objects",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'((count(nearestObjects [player,["WeaponHolder"],3])>0) || (count(nearestObjects [player,["GroundWeaponHolder"],3])>0) || (count(nearestObjects [player,["WeaponHolderSimulated"],3])>0))']);
+        player addaction ["Barriers",life_fnc_barrier,[""],0,false,true,"","vehicle player == player and BarrierOpen == 0"];
     	};
     //EMS
-    case independent: { };
+    case independent: {
+        player addaction ["Barriers",life_fnc_barrier,[""],0,false,true,"","vehicle player == player and BarrierOpen == 0"];
+    };
 
 };
 
 life_actions pushBack (player addAction["<t color = '#D660D6'>Put on Seatbelt</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
 life_actions pushBack (player addAction["<t color = '#D660D6'>Remove Seatbelt</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
+    
