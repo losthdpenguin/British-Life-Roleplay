@@ -170,6 +170,16 @@ class Licenses {
         side = "civ";
     };
 
+    class advancedrebel {
+        variable = "advancedrebel";
+        displayName = "STR_License_advancedrebel";
+        price = 80000;
+        illegal = true;
+        side = "civ";
+    };
+ 
+
+
     class tobacco {
         variable = "tobacco";
         displayName = "STR_License_Tobacco";

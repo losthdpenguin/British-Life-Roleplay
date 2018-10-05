@@ -30,6 +30,13 @@ class VirtualShops {
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "ziptie", "blindfold", "gag", "codeCracker"};
     };
 
+    class advancedrebel {
+        name = "STR_Shops_advancedrebel";
+        side = "civ";
+        conditions = "license_civ_rebel";
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "ziptie", "blindfold", "gag", "codeCracker"};
+    };
+
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";

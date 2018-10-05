@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=4984;
+		nextID=4987;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=680;
+		nextID=697;
 	};
 	class Camera
 	{
-		pos[]={14655.173,21.444839,16760.939};
-		dir[]={-0.6144731,-0.48382884,0.62321454};
-		up[]={-0.33970031,0.87515444,0.34453136};
-		aside[]={0.71210229,5.0477684e-007,0.70211327};
+		pos[]={14705.377,19.489487,16679.422};
+		dir[]={0.51548988,-0.33872902,0.78715092};
+		up[]={0.18558277,0.94087422,0.28338605};
+		aside[]={0.83659929,5.3690746e-007,-0.54787391};
 	};
 };
 binarizationWanted=0;
@@ -120,7 +120,9 @@ addons[]=
 	"A3_Structures_F_Civ_BellTowers",
 	"A3_Structures_F_Exp_Infrastructure_Pavements",
 	"A3_Structures_F_Mil_Barracks",
-	"A3_Structures_F_Argo_Signs_Warnings"
+	"A3_Structures_F_Argo_Signs_Warnings",
+	"A3_Weapons_F_Pistols_P07",
+	"A3_Weapons_F_Items"
 };
 class AddonsMetaData
 {
@@ -364,24 +366,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -396,6 +380,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -453,7 +455,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1753;
+		items=1755;
 		class Item0
 		{
 			dataType="Marker";
@@ -2524,7 +2526,7 @@ class Mission
 			name="atm_marker_2_10";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=228.38208;
+			angle=228.38206;
 			id=209;
 			atlOffset=0.068870544;
 		};
@@ -41397,8 +41399,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -41407,10 +41409,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -41435,8 +41437,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -41445,10 +41447,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -65109,6 +65111,138 @@ class Mission
 			text="Ectasy Field";
 			type="mil_dot";
 			id=4983;
+		};
+		class Item1753
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14696.037,17.911438,16609.578};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Rebel_Market"",life_fnc_virt_menu,""advancedrebel""]; this addAction[localize ""STR_MAR_advancedrebel_Clothing_Shop"",life_fnc_clothingMenu,""advancedreb"",0,false,false,"""",' license_civ_advancedrebel && playerSide isEqualTo civilian']; this addAction[localize ""STR_MAR_advancedrebel_Weapon_Shop"",life_fnc_weaponShopMenu,""advancedrebel"",0,false,false,"""",' license_civ_advancedrebel && playerSide isEqualTo civilian']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""advancedrebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""advancedrebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""advancedrebel"",0,false,false,"""",' !license_civ_advancedrebel && playerSide isEqualTo civilian ']; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						class Inventory
+						{
+							class handgun
+							{
+								name="hgun_P07_F";
+								class primaryMuzzleMag
+								{
+									name="16Rnd_9x21_Mag";
+									ammoLeft=16;
+								};
+							};
+							class binocular
+							{
+								name="Rangefinder";
+							};
+							class uniform
+							{
+								typeName="U_C_HunterBody_grn";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_BandollierB_cbr";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="G_Combat";
+							hmd="NVGoggles";
+							headgear="H_Shemag_olive_hs";
+						};
+					};
+					id=4985;
+					type="B_soldier_AAA_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4984;
+		};
+		class Item1754
+		{
+			dataType="Marker";
+			position[]={14695.718,17.91,16609.75};
+			name="marker_259";
+			text="Advanced Rebel";
+			type="mil_dot";
+			id=4986;
 		};
 	};
 };

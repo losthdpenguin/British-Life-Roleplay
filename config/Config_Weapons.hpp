@@ -189,6 +189,104 @@ class WeaponShops {
         };
     };
 
+
+    class advancedrebel {
+        name = "Advanced Rebel Shop";
+        side = "civ";
+        conditions = "license_civ_rebel";
+        items[] = {
+            { "arifle_TRG21_F", "", 12500, 7500, "" },
+            { "arifle_AKS_F", "", 17500, 11000, "" },
+            { "arifle_SPAR_01_snd_F", "", 20500, 10000, "" },
+            { "arifle_Katiba_F", "", 22000, 15000, "" },
+            { "arifle_ARX_hex_F", "", 24500, 15500, "" }, //Apex DLC
+            { "srifle_DMR_07_blk_F_arco_flash_F", "", 28500, 18500, "" }, //Apex DLC
+            { "arifle_SPAR_02_snd_F", "", 32000, 20500, "" }, //Apex DLC
+            { "srifle_DMR_06_olive_F", "", 35500, 25500, "" }, //Apex DLC
+            { "srifle_DMR_01_DMS_BI_F", "", 38500, 28250, "" }, //Apex DLC
+            { "arifle_SPAR_03_snd_F", "", 41000, 30500, "" }, //Apex DLC
+			{ "arifle_AKM_F", "", 45000, 30500, "" }, //Apex DLC
+			{ "arifle_AK12_F", "", 50000, 40500, "" }, //Apex DLC
+			{ "srifle_DMR_05_tan_f", "", 60000, 40500, "" } //Apex DLC
+        };
+        mags[] = {
+            { "30Rnd_556x45_Stanag", "", 300, 150, "" },
+			{ "30Rnd_545x39_Mag_F", "", 300, 150, "" },
+			{ "30Rnd_545x39_Mag_Green_F", "", 300, 150, "" },
+			{ "30Rnd_545x39_Mag_Tracer_F", "", 300, 150, "" },
+			{ "30Rnd_545x39_Mag_Tracer_Green_F", "", 300, 150, "" },
+			{ "30Rnd_556x45_Stanag", "", 300, 150, "" },
+			{ "30Rnd_556x45_Stanag_green", "", 300, 150, "" },
+			{ "30Rnd_556x45_Stanag_red", "", 300, 150, "" },
+			{ "30Rnd_556x45_Stanag_Tracer_Red", "", 300, 150, "" },
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "", 300, 150, "" },
+			{ "30Rnd_556x45_Stanag_Tracer_Yellow", "", 300, 150, "" },
+			{ "30Rnd_580x42_Mag_F", "", 300, 150, "" },
+			{ "30Rnd_580x42_Mag_Tracer_F", "", 300, 150, "" },
+			{ "30Rnd_65x39_caseless_green", "", 300, 150, "" },
+			{ "30Rnd_65x39_caseless_green_mag_Tracer", "", 300, 150, "" },
+			{ "10Rnd_50BW_Mag_F", "", 300, 150, "" },
+			{ "20Rnd_650x39_Cased_Mag_F", "", 300, 150, "" },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 300, 150, "" },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 300, 150, "" },
+			{ "20Rnd_762x51_Mag", "", 300, 150, "" },
+			{ "30Rnd_762x39_Mag_F", "", 300, 150, "" },
+			{ "30Rnd_762x39_Mag_Green_F", "", 300, 150, "" },
+			{ "30Rnd_762x39_Mag_Tracer_F", "", 300, 150, "" },
+			{ "30Rnd_762x39_Mag_Tracer_Green_F", "", 300, 150, "" },
+			{ "10Rnd_93x64_DMR_05_Mag", "", 300, 150, "" }
+        };
+        accs[] = {
+            { "muzzle_snds_H", "", 3500, 1750, "" },
+			{ "muzzle_snds_L", "", 3500, 1750, "" },
+			{ "muzzle_snds_M", "", 3500, 1750, "" },
+			{ "muzzle_snds_B", "", 3500, 1750, "" },
+			{ "muzzle_snds_H_MG", "", 3500, 1750, "" },
+			{ "muzzle_snds_H_SW", "", 3500, 1750, "" },
+			{ "optic_Arco", "", 2500, 1750, "" },
+			{ "optic_Aco", "", 3500, 1750, "" },
+			{ "optic_Aco_smg", "", 3500, 1750, "" },
+			{ "optic_ACO_grn_smg", "", 3500, 1750, "" },
+			{ "optic_Holosight", "", 4500, 2750, "" },
+			{ "optic_Holosight_smg", "", 4500, 2750, "" },
+			{ "optic_SOS", "", 4500, 2750, "" },
+			{ "acc_flashlight", "", 1500, 750, "" },
+			{ "acc_flashlight_smg_01", "", 1500, 750, "" },
+			{ "acc_flashlight_pistol", "", 1500, 750, "" },
+			{ "acc_pointer_IR", "", 1500, 750, "" },
+			{ "optic_MRCO", "", 1500, 750, "" },
+			{ "muzzle_snds_acp", "", 1500, 750, "" },
+			{ "optic_DMS", "", 5000, 2750, "" },
+			{ "optic_Yorris", "", 5000, 2750, "" },
+			{ "optic_MRD", "", 4000, 2750, "" },
+			{ "optic_LRPS", "", 5500, 2750, "" },
+			{ "muzzle_snds_338_black", "", 3500, 2750, "" },
+			{ "muzzle_snds_338_green", "", 3500, 2750, "" },
+			{ "muzzle_snds_338_sand", "", 3500, 2750, "" },
+			{ "muzzle_snds_93mmg", "", 2000, 1750, "" },
+			{ "muzzle_snds_93mmg_tan", "", 2000, 1750, "" },
+			{ "optic_AMS", "", 3500, 1750, "" },
+			{ "optic_AMS_khk", "", 3500, 1750, "" },
+			{ "optic_AMS_snd", "", 3500, 1750, "" },
+			{ "optic_KHS_blk", "", 3500, 1750, "" },
+			{ "optic_KHS_old", "", 3500, 1750, "" },
+			{ "optic_KHS_tan", "", 3500, 1750, "" },
+			{ "bipod_01_F_snd", "", 1500, 750, "" },
+			{ "bipod_01_F_blk", "", 1500, 750, "" },
+			{ "bipod_01_F_mtp", "", 1500, 750, "" },
+			{ "bipod_02_F_blk", "", 1500, 750, "" },
+			{ "bipod_02_F_tan", "", 1500, 750, "" },
+			{ "bipod_03_F_blk", "", 1500, 750, "" },
+			{ "bipod_03_F_oli", "", 1500, 750, "" },
+			{ "muzzle_snds_H_khk_F", "", 3500, 1750, "" },
+			{ "muzzle_snds_H_snd_F", "", 3500, 1750, "" },
+			{ "muzzle_snds_m_khk_F", "", 3500, 1750, "" },
+			{ "muzzle_snds_m_snd_F", "", 3500, 1750, "" },
+			{ "muzzle_snds_B_khk_F", "", 3500, 1750, "" },
+			{ "muzzle_snds_B_snd_F", "", 3500, 1750, "" }
+        };
+    };
+
     class gang {
         name = "Hideout Armament";
         side = "civ";

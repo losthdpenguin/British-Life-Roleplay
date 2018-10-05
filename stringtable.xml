@@ -94,6 +94,12 @@
             <Polish>Sklep samobójców AKBAR</Polish>
             <German>Mohammed's Ausrüstungen</German>
         </Key>
+
+
+
+        <Key ID="STR_Shops_C_advancedrebel">
+            <Original>Advanced Rebel</Original>
+        </Key>
         <Key ID="STR_Shops_C_Diving">
             <Original>Steve's Diving Shop</Original>
             <Czech>Steve je potápění obchod</Czech>
@@ -7192,6 +7198,10 @@
             <Portuguese>Treinamento Rebelde</Portuguese>
             <Polish>Trening rebelianta</Polish>
         </Key>
+        <Key ID="STR_License_advancedrebel">
+            <Original>Advanced Rebel</Original>
+        </Key>
+
         <Key ID="STR_License_Truck">
             <Original>Truck License</Original>
             <Czech>Truck licence</Czech>
@@ -10353,16 +10363,14 @@
             <Portuguese>Loja de Roupas Rebeldes</Portuguese>
             <Polish>Magazyn rebelianta</Polish>
         </Key>
-        <Key ID="STR_MAR_Rebel_Weapon_Shop">
-            <Original>Rebel Weapon Shop</Original>
-            <Czech>Rebel obchodu se zbraněmi</Czech>
-            <French>Armurerie rebelle</French>
-            <Spanish>Tienda de Armas Rebeldes</Spanish>
-            <Russian></Russian>
-            <German>Rebellen Waffenhändler</German>
-            <Portuguese>Loja de Armas Rebeldes</Portuguese>
-            <Polish>Zbrojownia rebelianta</Polish>
-            <Italian>Armeria della Guerriglia</Italian>
+        <Key ID="STR_MAR_advancedrebel_Clothing_Shop">
+            <Original>Advanced Rebel Clothing Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_advancedrebel_Weapon_Shop">
+            <Original>Advanced Rebel Weapon Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_advancedrebel_Weapon_Shop">
+            <Original>Advanced Rebel Weapon Shop</Original>
         </Key>
         <Key ID="STR_MAR_Helicopter_Shop">
             <Original>Helicopter Shop</Original>
@@ -10397,6 +10405,11 @@
             <Portuguese>Mercado Rebelde</Portuguese>
             <Polish>Market rebelianta</Polish>
         </Key>
+
+        <Key ID="STR_Shops_advancedrebel">
+            <Original>Advanced Rebel Market</Original>
+        </Key>
+        
         <Key ID="STR_MAR_Question_Dealer">
             <Original>Question Dealer</Original>
             <Czech>Otázka prodejce</Czech>
